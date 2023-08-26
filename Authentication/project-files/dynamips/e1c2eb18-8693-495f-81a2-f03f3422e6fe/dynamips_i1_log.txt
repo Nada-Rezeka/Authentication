@@ -1,0 +1,59 @@
+May 22 23:16:29.418 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 22 23:16:29.420 HYPERVISOR: Started on IP = localhost, TCP port = 55144.
+May 22 23:16:29.483 HYPERVISOR: exec_cmd: hypervisor version 
+May 22 23:16:29.484 HYPERVISOR: exec_cmd: hypervisor working_dir D:\College\Third year\information security\Assignment\new\project-files\dynamips 
+May 22 23:16:30.020 GENERAL: working_dir=D:\College\Third year\information security\Assignment\new\project-files\dynamips
+May 22 23:16:30.021 HYPERVISOR: exec_cmd: hypervisor working_dir D:\College\Third year\information security\Assignment\new\project-files\dynamips\e1c2eb18-8693-495f-81a2-f03f3422e6fe 
+May 22 23:16:30.021 GENERAL: working_dir=D:\College\Third year\information security\Assignment\new\project-files\dynamips\e1c2eb18-8693-495f-81a2-f03f3422e6fe
+May 22 23:16:30.022 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+May 22 23:16:30.024 VM: VM R1 created.
+May 22 23:16:30.025 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+May 22 23:16:30.025 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+May 22 23:16:30.027 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 22 23:16:30.027 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 22 23:16:30.027 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:16:30.028 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c09aa0 
+May 22 23:16:30.029 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Nadar/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.bin.image 
+May 22 23:16:30.030 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.1b8c.0000 
+May 22 23:16:30.030 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 22 23:16:30.031 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+May 22 23:16:30.031 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:16:30.032 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+May 22 23:16:31.238 HYPERVISOR: exec_cmd: nio create_udp udp-73222feb-5504-45de-ac10-ec593aabdc33 10001 127.0.0.1 10002 
+May 22 23:16:31.556 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-73222feb-5504-45de-ac10-ec593aabdc33 
+May 22 23:16:31.557 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:16:31.655 HYPERVISOR: exec_cmd: nio create_udp udp-e9f85602-8ceb-4371-be07-5a5e379f2865 10004 127.0.0.1 10005 
+May 22 23:16:33.343 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-e9f85602-8ceb-4371-be07-5a5e379f2865 
+May 22 23:16:33.345 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:16:33.438 HYPERVISOR: exec_cmd: nio create_udp udp-90b55b3d-6129-4bcd-a6b9-44505d3b1b40 10007 127.0.0.1 10008 
+May 22 23:16:33.442 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 2 udp-90b55b3d-6129-4bcd-a6b9-44505d3b1b40 
+May 22 23:16:33.443 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:17:20.304 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 22 23:17:20.306 VM: VM Ghost created.
+May 22 23:17:20.307 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Nadar/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.bin.image 
+May 22 23:17:20.308 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 22 23:17:20.308 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost D:\College\Third year\information security\Assignment\new\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.bin.image-256.ghost 
+May 22 23:17:20.309 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+May 22 23:17:20.309 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 23:17:20.312 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 22 23:17:20.313 HYPERVISOR: exec_cmd: vm start Ghost 
+May 22 23:17:21.094 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 22 23:17:21.096 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 22 23:17:21.181 VM: VM Ghost shutdown.
+May 22 23:17:21.183 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 22 23:17:21.186 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 22 23:17:21.186 VM: VM Ghost destroyed.
+May 22 23:17:21.211 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+May 22 23:17:21.212 HYPERVISOR: exec_cmd: vm set_ghost_file R1 D:\College\Third year\information security\Assignment\new\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.bin.image-256.ghost 
+May 22 23:17:21.213 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:17:21.224 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+May 22 23:17:21.224 HYPERVISOR: exec_cmd: vm start R1 
+May 22 23:17:51.601 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 23:17:51.613 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 23:25:37.911 HYPERVISOR: exec_cmd: vm get_status R1 
+May 22 23:25:37.911 HYPERVISOR: exec_cmd: vm stop R1 
+May 22 23:25:38.110 VM: VM R1 shutdown.
+May 22 23:25:38.111 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 22 23:25:48.952 HYPERVISOR: Stopped.
+May 22 23:25:48.952 VM: VM R1 destroyed.
+May 22 23:25:48.954 GENERAL: reset done.
